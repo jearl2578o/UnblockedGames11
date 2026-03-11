@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "Retro Drift",
+    "description": "A high-octane neon racing game with synthwave vibes.",
+    "thumbnail": "https://picsum.photos/seed/drift/800/450",
+    "url": "https://poki.com/en/g/retro-drift"
+  },
+  {
+    "id": "2",
+    "title": "Space Invaders",
+    "description": "The classic arcade shooter reimagined for the modern web.",
+    "thumbnail": "https://picsum.photos/seed/space/800/450",
+    "url": "https://poki.com/en/g/space-invaders"
+  },
+  {
+    "id": "3",
+    "title": "Neon Biker",
+    "description": "Perform stunts and survive the neon-lit tracks in this physics-based game.",
+    "thumbnail": "https://picsum.photos/seed/bike/800/450",
+    "url": "https://poki.com/en/g/neon-biker"
+  },
+  {
+    "id": "4",
+    "title": "Cyber Blade",
+    "description": "Fast-paced action game where you slice through enemies in a futuristic city.",
+    "thumbnail": "https://picsum.photos/seed/blade/800/450",
+    "url": "https://poki.com/en/g/cyber-blade"
+  }
+]
