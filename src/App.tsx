@@ -166,7 +166,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex-1 bg-black rounded-3xl border border-white/10 overflow-hidden shadow-2xl relative">
+              <div className="flex-1 bg-black rounded-3xl border border-white/10 overflow-hidden shadow-2xl relative group/player">
                 <iframe
                   src={selectedGame.url}
                   className="w-full h-full border-none"
@@ -174,6 +174,18 @@ export default function App() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
+                <div className="absolute bottom-4 right-4 opacity-0 group-hover/player:opacity-100 transition-opacity flex flex-col items-end gap-2">
+                  <p className="text-[10px] text-zinc-500 bg-black/80 px-2 py-1 rounded-md backdrop-blur-sm">Game not loading? Some providers block embedding.</p>
+                  <a 
+                    href={selectedGame.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-1.5 bg-emerald-500 text-black text-xs font-bold rounded-lg hover:scale-105 transition-transform shadow-lg shadow-emerald-500/20"
+                  >
+                    <ExternalLink size={14} />
+                    Open in New Tab
+                  </a>
+                </div>
               </div>
             </motion.div>
           )}

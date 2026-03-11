@@ -1,30 +1,30 @@
 [
   {
     "id": "1",
-    "title": "Retro Drift",
-    "description": "A high-octane neon racing game with synthwave vibes.",
-    "thumbnail": "https://picsum.photos/seed/drift/800/450",
-    "url": "https://poki.com/en/g/retro-drift"
+    "title": "2048",
+    "description": "The addictive number-merging puzzle game. Reach the 2048 tile!",
+    "thumbnail": "https://picsum.photos/seed/2048/800/450",
+    "url": "https://gabrielecirulli.github.io/2048/"
   },
   {
     "id": "2",
-    "title": "Space Invaders",
-    "description": "The classic arcade shooter reimagined for the modern web.",
-    "thumbnail": "https://picsum.photos/seed/space/800/450",
-    "url": "https://poki.com/en/g/space-invaders"
+    "title": "Hextris",
+    "description": "A fast-paced hexagonal puzzle game inspired by Tetris.",
+    "thumbnail": "https://picsum.photos/seed/hextris/800/450",
+    "url": "https://hextris.github.io/hextris/"
   },
   {
     "id": "3",
-    "title": "Neon Biker",
-    "description": "Perform stunts and survive the neon-lit tracks in this physics-based game.",
-    "thumbnail": "https://picsum.photos/seed/bike/800/450",
-    "url": "https://poki.com/en/g/neon-biker"
+    "title": "Clumsy Bird",
+    "description": "A fun Flappy Bird clone. How far can you fly?",
+    "thumbnail": "https://picsum.photos/seed/bird/800/450",
+    "url": "https://ellisonleao.github.io/clumsy-bird/"
   },
   {
     "id": "4",
-    "title": "Cyber Blade",
-    "description": "Fast-paced action game where you slice through enemies in a futuristic city.",
-    "thumbnail": "https://picsum.photos/seed/blade/800/450",
-    "url": "https://poki.com/en/g/cyber-blade"
+    "title": "Space Invaders",
+    "description": "Classic arcade shooter. Defend Earth from waves of aliens.",
+    "thumbnail": "https://picsum.photos/seed/invaders/800/450",
+    "url": "https://mrspeaker.github.io/invaders/"
   }
 ]
