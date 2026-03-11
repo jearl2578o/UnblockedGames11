@@ -31,17 +31,26 @@ async function startServer() {
     app.use(vite.middlewares);
 
     // Serve index.html in dev mode
-    app.get('*', async (req, res, next) => {
-      const url = req.originalUrl;
+    app.get('/', async (req, res, next) => {
       try {
         let template = await fs.promises.readFile(
-          path.resolve(__dirname, 'index.html'),
+          path.resolve(process.cwd(), 'index.html'),
           'utf-8'
         );
-        template = await vite.transformIndexHtml(url, template);
+        template = await vite.transformIndexHtml('/', template);
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } catch (e) {
         vite.ssrFixStacktrace(e);
+        next(e);
+      }
+    });
+
+    // Explicitly handle /src/main.js if Vite middleware misses it
+    app.get('/src/main.js', async (req, res, next) => {
+      try {
+        const content = await fs.promises.readFile(path.resolve(process.cwd(), 'src/main.js'), 'utf-8');
+        res.set('Content-Type', 'application/javascript').send(content);
+      } catch (e) {
         next(e);
       }
     });
