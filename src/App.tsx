@@ -19,6 +19,7 @@ interface Game {
 const gamesList: Game[] = Array.isArray(gamesData) ? gamesData : ((gamesData as any)?.default || []);
 
 export default function App() {
+  console.log('App rendering...');
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredGames, setFilteredGames] = useState<Game[]>(gamesList);
