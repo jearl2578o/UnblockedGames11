@@ -8,7 +8,6 @@ export default function App() {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    // Ensure gamesData is an array
     const list = Array.isArray(gamesData) ? gamesData : (gamesData.default || []);
     setGames(list);
   }, []);
@@ -18,7 +17,7 @@ export default function App() {
   );
 
   return (
-    <div className="min-h-screen flex flex-col font-sans">
+    <div className="min-h-screen flex flex-col font-sans bg-zinc-950 text-zinc-100">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
