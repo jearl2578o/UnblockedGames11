@@ -1,30 +1,26 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "title": "2048",
-    "description": "The addictive number-merging puzzle game. Reach the 2048 tile!",
-    "thumbnail": "https://picsum.photos/seed/2048/800/450",
-    "url": "https://gabrielecirulli.github.io/2048/"
+    "url": "https://play2048.co/",
+    "thumbnail": "https://picsum.photos/seed/2048/300/200"
   },
   {
-    "id": "2",
-    "title": "Hextris",
-    "description": "A fast-paced hexagonal puzzle game inspired by Tetris.",
-    "thumbnail": "https://picsum.photos/seed/hextris/800/450",
-    "url": "https://hextris.github.io/hextris/"
+    "id": 2,
+    "title": "Tetris",
+    "url": "https://tetris.com/play-tetris",
+    "thumbnail": "https://picsum.photos/seed/tetris/300/200"
   },
   {
-    "id": "3",
-    "title": "Clumsy Bird",
-    "description": "A fun Flappy Bird clone. How far can you fly?",
-    "thumbnail": "https://picsum.photos/seed/bird/800/450",
-    "url": "https://ellisonleao.github.io/clumsy-bird/"
+    "id": 3,
+    "title": "Pac-Man",
+    "url": "https://www.google.com/logos/2010/pacman10-i.html",
+    "thumbnail": "https://picsum.photos/seed/pacman/300/200"
   },
   {
-    "id": "4",
-    "title": "Space Invaders",
-    "description": "Classic arcade shooter. Defend Earth from waves of aliens.",
-    "thumbnail": "https://picsum.photos/seed/invaders/800/450",
-    "url": "https://mrspeaker.github.io/invaders/"
+    "id": 4,
+    "title": "Dino Run",
+    "url": "https://chromedino.com/",
+    "thumbnail": "https://picsum.photos/seed/dino/300/200"
   }
 ]
