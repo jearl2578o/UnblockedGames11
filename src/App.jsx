@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Search, Gamepad2, X, Maximize2 } from 'lucide-react';
 import gamesData from './games.json';
 
 export default function App() {
   const [selectedGame, setSelectedGame] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [games, setGames] = useState([]);
-
-  useEffect(() => {
-    const list = Array.isArray(gamesData) ? gamesData : (gamesData.default || []);
-    setGames(list);
-  }, []);
+  const games = Array.isArray(gamesData) ? gamesData : (gamesData.default || []);
 
   const filteredGames = games.filter(game => 
     game.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -67,7 +62,7 @@ export default function App() {
         {filteredGames.length === 0 && (
           <div className="flex flex-col items-center justify-center py-20 text-zinc-500">
             <Search className="w-12 h-12 mb-4 opacity-20" />
-            <p>No games found matching "{searchQuery}"</p>
+            <p>No games found matching &quot;{searchQuery}&quot;</p>
           </div>
         )}
       </main>
